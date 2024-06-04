@@ -9,6 +9,8 @@ In this documentation we covers basics of `Docker` like setup, images, container
 # What is Docker?
 
 * ```Docker``` is a platform for developing, shipping, and running applications. It uses containerization technology to package software and its dependencies into standardized units called containers. These containers can run on any machine, providing consistency across environments and simplifying the deployment process for developers and system administrators.
+* ```Docker``` is an open source software program or a service to manage containers, it enables us to create, run and execute softwares virtually without installing any other operating system. In short docker is an ecosystem where we can create and run containers.
+* Docker is a service which contains containers . it is derived for developers to develop, to run and execute applications. There is no need to install multiple operating systems. Also, docker is very flexible to work.
 
 <br> 
 
@@ -75,6 +77,10 @@ Easily share our apps with others. They can run them without needing the same se
 <br>
 
 # Docker Architecture
+
+* Docker uses Client-Server architecture, which involves the 3 main components that are Docker Client, Docker Host, and Docker Registry. The Docker client communicates with the Docker daemon, which takes care of the building, running, and distributing the Docker containers. The Docker client and daemon can run on the same system or connect a client to a remote Docker daemon. They communicate using REST APIs, over UNIX sockets or a network interface.
+
+
 
  
   
