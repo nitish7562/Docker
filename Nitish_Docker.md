@@ -1,5 +1,5 @@
  # Docker Documentation :
-In this documentation we covers basics of `Docker` like setup, images, containers, networking, volumes, and some basic `Docker` commands for efficient containerization practices. 
+In this documentation we covers basics of `Docker` like setup, images, containers, networking, volumes, and some basic `Docker` commands and practices. 
 
 ![image](https://www.docker.com/wp-content/uploads/2022/12/Docker-Temporary-Image-Social-Thumbnail-1200x630-1.png)
 
