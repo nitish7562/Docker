@@ -7,15 +7,26 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 1. [What is Docker?](#what-is-docker)
 2. [Why use Docker?](#why-use-docker)
-3. [Docker Architecture](#docker-architecture)
+3. [Key Features of Docker](#key-features-of-docker)
+   
+4. [Docker Architecture](#docker-architecture)
+5. [Installation of Docker](#installation-of-docker)
+6. [What is container?](#what-is-container)
+7. [Docker Files](#docker-files)
+8. [Components of Docker files](#components-of-docker-files)
+9. [Docker Network and Types](#docker-network-and-types)
+10. [Docker Storage](#docker-storage)
+11. [docker commands](#docker-commands)
+12. [Conclusion](#conclusion)
+13. [Reference Link](#reference-link)
 
-# What is Docker?
+## What is Docker?
 
 * ```Docker``` is a platform for developing, shipping, and running applications. It uses containerization technology to package software and its dependencies into standardized units called containers. These containers can run on any machine, providing consistency across environments and simplifying the deployment process for developers and system administrators.
 * ```Docker``` is an open source software program or a service to manage containers, it enables us to create, run and execute softwares virtually without installing any other operating system. In short docker is an ecosystem where we can create and run containers.
 * ```Docker``` is a service which contains containers . it is derived for developers to develop, to run and execute applications. There is no need to install multiple operating systems. Also, docker is very flexible to work.
 
-# Why use Docker?
+## Why use Docker?
 
 ### Clean & Separate:
 
@@ -37,7 +48,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 *Easily share our apps with others. They can run them without needing the same setup you have, like sharing a recipe with friends.*
 
-# Key Features of Docker:
+## Key Features of Docker:
 
 ### Containerization:
 
@@ -63,7 +74,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 * With the help of `docker`, Developer can build, test, and deploy applications more quicly and reliablly, thanks to the ability to create lightweight, reproducible development enviroments.
 
-# Docker Architecture
+## Docker Architecture
 
 *Docker uses Client-Server architecture, which involves the 3 main components that are Docker Client, Docker Host, and Docker Registry. The Docker client communicates with the Docker daemon, which takes care of the building, running, and distributing the Docker containers. The Docker client and daemon can run on the same system or connect a client to a remote Docker daemon. They communicate using REST APIs, over UNIX sockets or a network interface.*
 
@@ -103,7 +114,7 @@ $ docker run
 * Public Registry: It can be accessed by anyone and anywhere.
 * Private Registry: It is used to share the image with the interpries.
 
-# Installation of Docker
+## Installation of Docker
 
 #### Step 1. Check if the system up-to-date using following command :
 ```bash
@@ -196,17 +207,17 @@ Jun 05 14:16:59 nitishkumar-IdeaPad-3-15ITL6 systemd[1]: Started Docker Applicat
 ```
 <br>
 
-# What is container?
+## What is container?
 * A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
 * A Docker container is a lightweight, standalone, executable package that includes everything needed to run a piece of software: code, runtime, system tools, libraries, and settings. It is built from a Docker image and can run consistently on any system that has Docker installed.
 ![image](https://www.docker.com/wp-content/uploads/2021/11/docker-containerized-appliction-blue-border_2.png)
   
-# Docker Files
+## Docker Files
 *A Dockerfile is a text file that contains a series of instructions to build a Docker image. It specifies the base image, installs necessary software, copies files, and sets up the environment and commands needed to run the application. It automates the image creation process.*
 
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20230406105935/dockerfile-2.png)
 
-# Components of Docker files :
+## Components of Docker files 
 
 **FROM** : Specifies the base image to use for the Docker image. Every Dockerfile must start with a `FROM` instruction.
 
@@ -228,8 +239,7 @@ Jun 05 14:16:59 nitishkumar-IdeaPad-3-15ITL6 systemd[1]: Started Docker Applicat
 
 **ARG** : Defines variables. It is used to define build-time variable.
 
-# Docker Network and Types :
-<br>
+## Docker Network and Types 
 
 *The Docker network is a virtual network created by Docker to enable communication between Docker containers. If two containers are running on the same host they can communicate with each other without the need for ports to be exposed to the host machine*
 
@@ -259,7 +269,7 @@ NETWORK ID     NAME      DRIVER    SCOPE
 
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20230419172809/Docker-network-1.webp)
 
-# Docker Storage :
+## Docker Storage
 * Docker storage refers to how data is stored and managed in Docker containers. It includes various mechanisms to persist data generated and used by containers.
 * Containers don’t write data permanently to any storage location. Docker storage must be configured if you would like your container to store data permanently. The data doesn’t prevail when the container is deleted (using the remove command); this happens because when the container is deleted, the writable layer is also deleted. If the data is stored outside the container you can use it even if the container no longer exists.
 
@@ -303,7 +313,7 @@ $ docker container run -v /host-path:/container-path image-name
 $ docker run -d --name tmptest --mount type=tmpfs,destination=/app nginx:latest
 ```
 
-# docker commands : 
+## docker commands
 **Some of the most commonly used docker commands are**
 
 1. Check docker version
@@ -453,11 +463,14 @@ $ sudo docker rm (container name)
 $ sudo docker rmi (image name)
 ```
 
-# Conclusion :
+## Conclusion
 
 * `Docker` is a powerful tool that has revolutionized the way we develop, deploy, and manage applications. By allowing developers to package applications and their dependencies into containers, `Docker` ensures that software runs consistently across different environments, from development to production. This eliminates many of the issues related to environment differences, making the development process more efficient and reliable.
 
 * `Docker` simplifies the complexities of application deployment and management, making it an invaluable tool for modern software development. Its ability to create consistent environments, combined with the flexibility and efficiency of containers, makes Docker a cornerstone of DevOps practices and cloud-native development.
+
+## Reference Link
+* https://docs.docker.com/get-docker/
 
 ## Thank You!
 
