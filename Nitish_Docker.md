@@ -1,22 +1,19 @@
  # Docker Documentation :
+In this documentation we covers basics of `Docker` like setup, images, containers, networking, volumes, security, and basic concepts for efficient containerization practices. 
 
-[What is Docker?](#Installation-of-Docker)
+![image](https://www.docker.com/wp-content/uploads/2022/12/Docker-Temporary-Image-Social-Thumbnail-1200x630-1.png)
 
-[What is Docker?](#What-is-Docker-?)
+## Table of Content
 
-In this documentation we covers basics of `Docker` like setup, images, containers, networking, volumes, security, and advanced concepts for efficient containerization practices. 
-
-![image](https://github.com/nitish7562/Docker/assets/110687449/b4201e99-f0f2-4bc5-844f-cc19c620ce5f)
-
-<br>
+1. [What is Docker?](#what-is-docker)
+2. [Why use Docker?](#why-use-docker)
+3. [Docker Architecture](#docker-architecture)
 
 # What is Docker?
 
 * ```Docker``` is a platform for developing, shipping, and running applications. It uses containerization technology to package software and its dependencies into standardized units called containers. These containers can run on any machine, providing consistency across environments and simplifying the deployment process for developers and system administrators.
 * ```Docker``` is an open source software program or a service to manage containers, it enables us to create, run and execute softwares virtually without installing any other operating system. In short docker is an ecosystem where we can create and run containers.
 * ```Docker``` is a service which contains containers . it is derived for developers to develop, to run and execute applications. There is no need to install multiple operating systems. Also, docker is very flexible to work.
-
-<br> 
 
 # Why use Docker?
 
@@ -39,8 +36,6 @@ In this documentation we covers basics of `Docker` like setup, images, container
 ### Share and Colaborate:
 
 *Easily share our apps with others. They can run them without needing the same setup you have, like sharing a recipe with friends.*
-
-<br>
 
 # Key Features of Docker:
 
@@ -68,13 +63,9 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 * With the help of `docker`, Developer can build, test, and deploy applications more quicly and reliablly, thanks to the ability to create lightweight, reproducible development enviroments.
 
-<br>
-
 # Docker Architecture
 
 *Docker uses Client-Server architecture, which involves the 3 main components that are Docker Client, Docker Host, and Docker Registry. The Docker client communicates with the Docker daemon, which takes care of the building, running, and distributing the Docker containers. The Docker client and daemon can run on the same system or connect a client to a remote Docker daemon. They communicate using REST APIs, over UNIX sockets or a network interface.*
-
-<br>
 
 ![image](https://k21academy.com/wp-content/uploads/2021/04/image-16-1.png)
 
@@ -96,7 +87,6 @@ III. `docker run` command is used to start a new container from a Docker image.
 ```bash
 $ docker run
 ```
-<br>
 
 **Docker Host :**
 * A Docker host is a type of machine that is responsible for running more than one container.
@@ -112,8 +102,6 @@ $ docker run
 ***types of Registries.***
 * Public Registry: It can be accessed by anyone and anywhere.
 * Private Registry: It is used to share the image with the interpries.
-
-<br>
 
 # Installation of Docker
 
