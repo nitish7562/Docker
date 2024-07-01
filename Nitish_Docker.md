@@ -111,7 +111,7 @@ $ docker run
 
 ***types of Registries.***
 * Public Registry: It can be accessed by anyone and anywhere.
-* Private Registry: It is used to share the image with the interpries.
+* Private Registry: It is used to share the image with the enterprise.
 
 ## Installation of Docker
 
