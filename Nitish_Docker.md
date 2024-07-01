@@ -244,13 +244,10 @@ NETWORK ID     NAME      DRIVER    SCOPE
 3ccbbad91e95   none      null      local
 ```
 
-![image](https://media.geeksforgeeks.org/wp-content/uploads/20230419172809/Docker-network-1.webp)
-
 ## Docker Storage
 * Docker storage refers to how data is stored and managed in Docker containers. It includes various mechanisms to persist data generated and used by containers.
 * Containers don’t write data permanently to any storage location. Docker storage must be configured if you would like your container to store data permanently. The data doesn’t prevail when the container is deleted (using the remove command); this happens because when the container is deleted, the writable layer is also deleted. If the data is stored outside the container you can use it even if the container no longer exists.
 
-   ![image](https://static.javatpoint.com/blog/images/what-is-docker-volume.png)
 
 ### Types :
 ##### 1. Docker Volume :
