@@ -275,18 +275,6 @@ NETWORK ID     NAME      DRIVER    SCOPE
 $ docker container run -v /host-path:/container-path image-name
 ```
 
-##### 3. tmpfs Mounts :
-* When using Docker in Linux, you can also create storage volume for containers using tmpfs mount. But contrary to bind mounts and volumes, this type of mount is temporary and persists on host memory.
-
-* tmpfs is a third storage option that is not permanent like Docker volume or bind mount.
-
-* The data is written directly on to the host’s memory and deleted when the container is stopped.
-
-**Command :**
-```bash
-$ docker run -d --name tmptest --mount type=tmpfs,destination=/app nginx:latest
-```
-
 ## docker commands
 **Some of the most commonly used docker commands are**
 
