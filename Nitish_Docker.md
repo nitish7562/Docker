@@ -221,7 +221,6 @@ Jun 05 14:16:59 nitishkumar-IdeaPad-3-15ITL6 systemd[1]: Started Docker Applicat
 
 *The Docker network is a virtual network created by Docker to enable communication between Docker containers. If two containers are running on the same host they can communicate with each other without the need for ports to be exposed to the host machine*
 
-![image](https://media.geeksforgeeks.org/wp-content/uploads/20190915142620/docker_networks2.png)
 
 **Types :**
 1. `bridge:` If you build a container without specifying the kind of driver, the container will only be created in the bridge network, which is the default network.
