@@ -73,46 +73,6 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 * With the help of `docker`, Developer can build, test, and deploy applications more quicly and reliablly, thanks to the ability to create lightweight, reproducible development enviroments.
 
-## Docker Architecture
-
-*Docker uses Client-Server architecture, which involves the 3 main components that are Docker Client, Docker Host, and Docker Registry. The Docker client communicates with the Docker daemon, which takes care of the building, running, and distributing the Docker containers. The Docker client and daemon can run on the same system or connect a client to a remote Docker daemon. They communicate using REST APIs, over UNIX sockets or a network interface.*
-
-![image](https://k21academy.com/wp-content/uploads/2021/04/image-16-1.png)
-
-**Docker Client :**
-* With the help of the docker client, the docker users can interact with the docker. The docker command uses the Docker API. The Docker client can communicate with multiple daemons. When a docker client runs any docker command on the docker terminal then the terminal sends instructions to the daemon.
-* The main objective of the docker client is to provide a way to direct the pull of images from the docker registry and run them on the docker host.
-  
-***Commands used by Client :***
-
-I. `docker build` command is used to create a Docker image from a Dockerfile and a context. 
-```bash
-$ docker build
-```
-II. The `docker pull` command is used by a client to download an image from a Docker registry (such as Docker Hub) to their local system.
-```bash
-$ docker pull
-```
-III. `docker run` command is used to start a new container from a Docker image. 
-```bash
-$ docker run
-```
-
-**Docker Host :**
-* A Docker host is a type of machine that is responsible for running more than one container.
-* It contains the Docker daemon, Images, Containers, Networks, and Storage.
-
-**Docker daemon :**
-* Docker daemon runs on the host O/S.
-* It is responsible for running containers to manage docker services. and it also can communicate with other daemon.
-
-**Docker Registry :** 
-* Docker registry manages and stores the docker images.
-
-***types of Registries.***
-* Public Registry: It can be accessed by anyone and anywhere.
-* Private Registry: It is used to share the image with the enterprise.
-
 ## Installation of Docker
 
 #### Step 1. Check if the system up-to-date using following command :
@@ -205,6 +165,47 @@ Jun 05 14:16:59 nitishkumar-IdeaPad-3-15ITL6 dockerd[76257]: time="2024-06-05T14
 Jun 05 14:16:59 nitishkumar-IdeaPad-3-15ITL6 systemd[1]: Started Docker Application Container Engine.
 ```
 <br>
+
+
+## Docker Architecture
+
+*Docker uses Client-Server architecture, which involves the 3 main components that are Docker Client, Docker Host, and Docker Registry. The Docker client communicates with the Docker daemon, which takes care of the building, running, and distributing the Docker containers. The Docker client and daemon can run on the same system or connect a client to a remote Docker daemon. They communicate using REST APIs, over UNIX sockets or a network interface.*
+
+![image](https://k21academy.com/wp-content/uploads/2021/04/image-16-1.png)
+
+**Docker Client :**
+* With the help of the docker client, the docker users can interact with the docker. The docker command uses the Docker API. The Docker client can communicate with multiple daemons. When a docker client runs any docker command on the docker terminal then the terminal sends instructions to the daemon.
+* The main objective of the docker client is to provide a way to direct the pull of images from the docker registry and run them on the docker host.
+  
+***Commands used by Client :***
+
+I. `docker build` command is used to create a Docker image from a Dockerfile and a context. 
+```bash
+$ docker build
+```
+II. The `docker pull` command is used by a client to download an image from a Docker registry (such as Docker Hub) to their local system.
+```bash
+$ docker pull
+```
+III. `docker run` command is used to start a new container from a Docker image. 
+```bash
+$ docker run
+```
+
+**Docker Host :**
+* A Docker host is a type of machine that is responsible for running more than one container.
+* It contains the Docker daemon, Images, Containers, Networks, and Storage.
+
+**Docker daemon :**
+* Docker daemon runs on the host O/S.
+* It is responsible for running containers to manage docker services. and it also can communicate with other daemon.
+
+**Docker Registry :** 
+* Docker registry manages and stores the docker images.
+
+***types of Registries.***
+* Public Registry: It can be accessed by anyone and anywhere.
+* Private Registry: It is used to share the image with the enterprise.
 
 ## What is container?
 * A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
