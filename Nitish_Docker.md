@@ -181,15 +181,15 @@ Jun 05 14:16:59 nitishkumar-IdeaPad-3-15ITL6 systemd[1]: Started Docker Applicat
 
 I. `docker build` command is used to create a Docker image from a Dockerfile and a context. 
 ```bash
-$ docker build
+$ docker build -
 ```
-II. The `docker pull` command is used by a client to download an image from a Docker registry (such as Docker Hub) to their local system.
+I. The `docker pull` command is used by a client to download an image from a Docker registry (such as Docker Hub) to their local system.
 ```bash
-$ docker pull
+$ docker pull image_name
 ```
-III. `docker run` command is used to start a new container from a Docker image. 
+II. `docker run` command is used to start a new container from a Docker image. 
 ```bash
-$ docker run
+$ docker run container_name
 ```
 
 **Docker Host :**
@@ -423,7 +423,7 @@ $ sudo docker rm (container name)
 
 12. Removes an image from the host machine.
 ```bash
-$ sudo docker rmi (image name)
+$ sudo docker rmi (image Id)
 ```
 
 ## Conclusion
