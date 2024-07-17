@@ -59,7 +59,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 ### Efficiency:
 
-* `Docker` uses resourcess more eficiently than traditional virtual machines, as containers share the host system's kernel and do not require a full opearating system.
+* `Docker` uses resourcess more eficiently than traditional virtual machines, as containers share the host system's kernel and do not require a full operating system.
 
 ### Scalability:
 
