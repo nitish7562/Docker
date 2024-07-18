@@ -15,7 +15,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 7. [Docker Files](#docker-files)
 9. [Docker Network and Types](#docker-network-and-types)
 10. [Docker Storage](#docker-storage)
-11. [docker commands](#docker-commands)
+11. [Docker commands](#docker-commands)
 12. [Conclusion](#conclusion)
 13. [Reference Link](#reference-link)
 
@@ -75,7 +75,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 ## Installation of Docker
 **Prerequisite for Installation**
-1. Ubuntu 22.04.4 LTS or compatible Linux distribution
+1. Ubuntu `22.04.4 LTS` or compatible Linux distribution
 2. 64-bit of Ubuntu version
 3. At least 2 GB of RAM for running Docker
 4. Sufficient disk space for Docker images and containers.
@@ -290,7 +290,7 @@ NETWORK ID     NAME      DRIVER    SCOPE
 $ docker container run -v /host-path:/container-path image-name
 ```
 
-## docker commands
+## Docker commands
 **Some of the most commonly used docker commands are**
 
 1. Check docker version
@@ -448,6 +448,7 @@ $ sudo docker rmi (image Id)
 
 ## Reference Link
 * https://docs.docker.com/get-docker/
+* https://www.geeksforgeeks.org/docker-tutorial/
 
 ## Thank You!
 
