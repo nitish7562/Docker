@@ -5,8 +5,8 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 ## Table of Content
 
-1. [What is Docker?](#what-is-docker)
-2. [Why use Docker?](#why-use-docker)
+1. [What is Docker](#what-is-docker)
+2. [Why use Docker](#why-use-docker)
 3. [Key Features of Docker](#key-features-of-docker)
    
 4. [Docker Architecture](#docker-architecture)
@@ -19,13 +19,13 @@ In this documentation we covers basics of `Docker` like setup, images, container
 12. [Conclusion](#conclusion)
 13. [Reference Link](#reference-link)
 
-## What is Docker?
+## What is Docker
 
 * ```Docker``` is a platform for developing, shipping, and running applications. It uses containerization technology to package software and its dependencies into standardized units called containers. These containers can run on any machine, providing consistency across environments and simplifying the deployment process for developers and system administrators.
 * ```Docker``` is an open source software program or a service to manage containers, it enables us to create, run and execute softwares virtually without installing any other operating system. In short docker is an ecosystem where we can create and run containers.
 * ```Docker``` is a service which contains containers . it is derived for developers to develop, to run and execute applications. There is no need to install multiple operating systems. Also, docker is very flexible to work.
 
-## Why use Docker?
+## Why use Docker
 
 ### Clean & Separate:
 
