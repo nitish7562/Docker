@@ -258,11 +258,11 @@ NETWORK ID     NAME      DRIVER    SCOPE
 
 |**Command**|**Description**|
 | - | - |
-|docker volume create|Create a volume|
-|docker volume inspect|Display detailed information on one or more volumes|
+|docker volume create <container_name>|Create a volume|
+|docker volume inspect container_name |Display detailed information on one or more volumes|
 |docker volume Is|List volumes|
 |docker volume prune|Remove all unused local volumes|
-|docker volume rm|Remove one or more volumes|
+|docker volume rm volume_name|Remove one or more volumes|
 
 ##### 2. Docker Bind Mounts : 
 * Docker Bind Mounts is a mechanism provided by Docker to store container data on localhost, but the directory or file mounted using bind mounts can be accessed by non-Docker processes as well and it relies on the host machine’s filesystem having a specific directory structure available because it uses absolute path for binding.
