@@ -74,24 +74,38 @@ In this documentation we covers basics of `Docker` like setup, images, container
 * With the help of `docker`, Developer can build, test, and deploy applications more quicly and reliablly, thanks to the ability to create lightweight, reproducible development enviroments.
 
 ## Installation of Docker
+**Prerequisite for Installation**
+1. Ubuntu 22.04.4 LTS or compatible Linux distribution
+2. 64-bit of Ubuntu version
+3. At least 2 GB of RAM for running Docker
+4. Sufficient disk space for Docker images and containers.
 
 #### Step 1. Check if the system up-to-date using following command :
 ```bash
 $ sudo apt-get update
 ```
-#### Step 2. After update system Now you can Install Docker using the following command:
+#### Step 2. Set up Docker's `apt` repository.
 ```bash
-$ sudo apt install docker.io
+$ sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
 ```
-* You’ll then get a prompt asking you to choose between y/n - choose y
+
+#### Step 3. Add the repository to Apt sources:
 ```bash
-Do you want to continue? [Y/n] y
+$  echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
-#### Step 3. Install all the dependency package using this command:
+
+#### Step 4. To install the latest version of Docker Engine:
 ```bash
-$  sudo snap install docker
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
-#### Step 4. check the version of Docker :
+
+#### Step 5. check the version of Docker :
 ```bash
 $ docker version
 
