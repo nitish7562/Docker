@@ -29,23 +29,23 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 ### Clean & Separate:
 
-*Run each app in its own space, like having separate rooms for different tasks. This keeps things organized and avoids conflicts.*
+* Run each app in its own space, like having separate rooms for different tasks. This keeps things organized and avoids conflicts.
 
 ### Move Anywhere:
 
-*Imagine our apps in portable boxes. Docker lets move our apps easily between different computers or cloud services, like packing boxes for a move.*
+* Imagine our apps in portable boxes. Docker lets move our apps easily between different computers or cloud services, like packing boxes for a move.
 
 ### Runs Fast & Lean:
 
-*Containers are lightweight, like carrying a backpack instead of a suitcase. They start up quicker and use fewer resources.*
+* Containers are lightweight, like carrying a backpack instead of a suitcase. They start up quicker and use fewer resources.
 
 ### Always the Same:
 
-*Build our app recipe once with Docker. No matter where i run it, I get the same results, avoiding setup headaches.*
+* Build our app recipe once with Docker. No matter where i run it, I get the same results, avoiding setup headaches.
 
 ### Share and Colaborate:
 
-*Easily share our apps with others. They can run them without needing the same setup you have, like sharing a recipe with friends.*
+* Easily share our apps with others. They can run them without needing the same setup you have, like sharing a recipe with friends.
 
 ## Key Features of Docker:
 
@@ -183,7 +183,7 @@ Jun 05 14:16:59 nitishkumar-IdeaPad-3-15ITL6 systemd[1]: Started Docker Applicat
 
 ## Docker Architecture
 
-*Docker uses Client-Server architecture, which involves the 3 main components that are Docker Client, Docker Host, and Docker Registry. The Docker client communicates with the Docker daemon, which takes care of the building, running, and distributing the Docker containers. The Docker client and daemon can run on the same system or connect a client to a remote Docker daemon. They communicate using REST APIs, over UNIX sockets or a network interface.*
+* Docker uses Client-Server architecture, which involves the 3 main components that are Docker Client, Docker Host, and Docker Registry. The Docker client communicates with the Docker daemon, which takes care of the building, running, and distributing the Docker containers. The Docker client and daemon can run on the same system or connect a client to a remote Docker daemon. They communicate using REST APIs, over UNIX sockets or a network interface.
 
 ![image](https://k21academy.com/wp-content/uploads/2021/04/image-16-1.png)
 
@@ -191,7 +191,7 @@ Jun 05 14:16:59 nitishkumar-IdeaPad-3-15ITL6 systemd[1]: Started Docker Applicat
 * With the help of the docker client, the docker users can interact with the docker. The docker command uses the Docker API. The Docker client can communicate with multiple daemons. When a docker client runs any docker command on the docker terminal then the terminal sends instructions to the daemon.
 * The main objective of the docker client is to provide a way to direct the pull of images from the docker registry and run them on the docker host.
   
-***Commands used by Client :***
+**Commands used by Client :**
 
 I. `docker build` command is used to create a Docker image from a Dockerfile and a context. 
 ```bash
@@ -217,7 +217,7 @@ $ docker run container_name
 **Docker Registry :** 
 * Docker registry manages and stores the docker images.
 
-***types of Registries.***
+**types of Registries.**
 * Public Registry: It can be accessed by anyone and anywhere.
 * Private Registry: It is used to share the image with the enterprise.
 
@@ -262,33 +262,6 @@ NETWORK ID     NAME      DRIVER    SCOPE
 ## Docker Storage
 * Docker storage refers to how data is stored and managed in Docker containers. It includes various mechanisms to persist data generated and used by containers.
 * Containers don’t write data permanently to any storage location. Docker storage must be configured if you would like your container to store data permanently. The data doesn’t prevail when the container is deleted (using the remove command); this happens because when the container is deleted, the writable layer is also deleted. If the data is stored outside the container you can use it even if the container no longer exists.
-
-
-### Types :
-##### 1. Docker Volume :
-* `Docker Volume` is the most commonly used technology for the permanent storage of container data.
-* `Docker volume` is managed by Docker itself and has a dedicated filesystem on the host, and doesn't depend upon the filesystem structure on the host.
-* It ia an explicitly managed via the Docker command line and can be created alone or during container initialization.
-
-|**Command**|**Description**|
-| - | - |
-|docker volume create <container_name>|Create a volume|
-|docker volume inspect <container_name>|Display detailed information on one or more volumes|
-|docker volume Is|List volumes|
-|docker volume prune|Remove all unused local volumes|
-|docker volume rm volume_name|Remove one or more volumes|
-
-##### 2. Docker Bind Mounts : 
-* Docker Bind Mounts is a mechanism provided by Docker to store container data on localhost, but the directory or file mounted using bind mounts can be accessed by non-Docker processes as well and it relies on the host machine’s filesystem having a specific directory structure available because it uses absolute path for binding.
-  
-* Docker bind mount is the second permanent storage option but with more limited options than Docker volume.
-
-* It can’t be managed via Docker CLI and is totally dependent on the availability of the filesystem of the host.
-  
-**Command :**
-```bash
-$ docker container run -v /host-path:/container-path image-name
-```
 
 ## Docker commands
 **Some of the most commonly used docker commands are**
