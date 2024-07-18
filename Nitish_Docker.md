@@ -362,10 +362,10 @@ docker.io/library/httpd:latest
 ```
 7. Create the container
 ```bash
-$ sudo docker run -itd --name (container name) (Image name)
+$ sudo docker run -it --name (container name) (Image name)
 ```
 ```bash
-nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo docker run -itd --name apache httpd
+nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo docker run -it --name apache httpd
 02dca9c9d6db28e5dc11f99e7297db8adf0f4f8074358ee9ddc8723409748cac
 ```
 
