@@ -195,7 +195,7 @@ Jun 05 14:16:59 nitishkumar-IdeaPad-3-15ITL6 systemd[1]: Started Docker Applicat
 
 I. `docker build` command is used to create a Docker image from a Dockerfile and a context. 
 ```bash
-$ docker build -t (name) .
+$ docker build -t image_name .
 ```
 I. The `docker pull` command is used by a client to download an image from a Docker registry (such as Docker Hub) to their local system.
 ```bash
@@ -227,14 +227,14 @@ $ docker run container_name
 ![image](https://www.docker.com/wp-content/uploads/2021/11/docker-containerized-appliction-blue-border_2.png)
   
 ## Docker Files
-*A Dockerfile is a text file that contains a series of instructions to build a Docker image. It specifies the base image, installs necessary software, copies files, and sets up the environment and commands needed to run the application. It automates the image creation process.*
+* A Dockerfile is a text file that contains a series of instructions to build a Docker image. It specifies the base image, installs necessary software, copies files, and sets up the environment and commands needed to run the application. It automates the image creation process.
 
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20230406105935/dockerfile-2.png)
 
 
 ## Docker Network and Types 
 
-*The Docker network is a virtual network created by Docker to enable communication between Docker containers. If two containers are running on the same host they can communicate with each other without the need for ports to be exposed to the host machine*
+* The Docker network is a virtual network created by Docker to enable communication between Docker containers. If two containers are running on the same host they can communicate with each other without the need for ports to be exposed to the host machine
 
 
 **Types :**
@@ -273,7 +273,7 @@ NETWORK ID     NAME      DRIVER    SCOPE
 |**Command**|**Description**|
 | - | - |
 |docker volume create <container_name>|Create a volume|
-|docker volume inspect container_name |Display detailed information on one or more volumes|
+|docker volume inspect <container_name>|Display detailed information on one or more volumes|
 |docker volume Is|List volumes|
 |docker volume prune|Remove all unused local volumes|
 |docker volume rm volume_name|Remove one or more volumes|
