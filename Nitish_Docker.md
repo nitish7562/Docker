@@ -11,7 +11,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
    
 4. [Docker Architecture](#docker-architecture)
 5. [Installation of Docker](#installation-of-docker)
-6. [What is container?](#what-is-container)
+6. [What is container](#what-is-container)
 7. [Docker Files](#docker-files)
 9. [Docker Network and Types](#docker-network-and-types)
 10. [Docker Storage](#docker-storage)
@@ -21,9 +21,9 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 ## What is Docker
 
-* ```Docker``` is a platform for developing, shipping, and running applications. It uses containerization technology to package software and its dependencies into standardized units called containers. These containers can run on any machine, providing consistency across environments and simplifying the deployment process for developers and system administrators.
-* ```Docker``` is an open source software program or a service to manage containers, it enables us to create, run and execute softwares virtually without installing any other operating system. In short docker is an ecosystem where we can create and run containers.
-* ```Docker``` is a service which contains containers . it is derived for developers to develop, to run and execute applications. There is no need to install multiple operating systems. Also, docker is very flexible to work.
+* ```Docker``` is a platform for developing shipping and running applications. It uses containerization technology to package software and its dependencies into standardized units called containers. These containers can run on any machine providing consistency across environments and simplifying the deployment process for developers and system administrators.
+* ```Docker``` is an open source software program or a service to manage containers. It enables us to create, run and execute softwares virtually without installing any other operating system. In short docker is an ecosystem where we can create and run containers.
+* ```Docker``` is a service which contains containers. It is derived for developers to develop to run and execute applications. There is no need to install multiple operating systems Also docker is very flexible to work.
 
 ## Why use Docker
 
@@ -77,8 +77,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 **Prerequisite for Installation**
 1. Ubuntu `22.04.4 LTS` or compatible Linux distribution
 2. 64-bit of Ubuntu version
-3. At least 2 GB of RAM for running Docker
-4. Sufficient disk space for Docker images and containers.
+3. Minimum 2 GB of RAM for running Docker
 
 #### Step 1. Check if the system up-to-date using following command :
 ```bash
@@ -221,7 +220,7 @@ $ docker run container_name
 * Public Registry: It can be accessed by anyone and anywhere.
 * Private Registry: It is used to share the image with the enterprise.
 
-## What is container?
+## What is container
 * A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
 * A Docker container is a lightweight, standalone, executable package that includes everything needed to run a piece of software: code, runtime, system tools, libraries, and settings. It is built from a Docker image and can run consistently on any system that has Docker installed.
 ![image](https://www.docker.com/wp-content/uploads/2021/11/docker-containerized-appliction-blue-border_2.png)
