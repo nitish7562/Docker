@@ -22,7 +22,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 ## What is Docker
 
 * ```Docker``` is a platform for developing shipping and running applications. It uses containerization technology to package software and its dependencies into standardized units called containers. These containers can run on any machine providing consistency across environments and simplifying the deployment process for developers and system administrators.
-* ```Docker``` is an open source software program or a service to manage containers. It enables us to create, run and execute softwares virtually without installing any other operating system. In short docker is an ecosystem where we can create and run containers.
+  
 * ```Docker``` is a service which contains containers. It is derived for developers to develop to run and execute applications. There is no need to install multiple operating systems Also docker is very flexible to work.
 
 ## Why use Docker
@@ -81,7 +81,7 @@ $ sudo apt-get update
 ```
 #### Step 2. Set up Docker's `apt` repository.
 ```bash
-$ sudo apt-get install ca-certificates curl
+sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
@@ -89,7 +89,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 #### Step 3. Add the repository to Apt sources:
 ```bash
-$  echo \
+echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
@@ -97,12 +97,12 @@ $  echo \
 
 #### Step 4. To install the latest version of Docker Engine:
 ```bash
-$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 #### Step 5. check the version of Docker :
 ```bash
-$ docker --version
+ docker --version
 
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ docker --version
 Docker version 26.0.2, build 3c863ff
@@ -111,7 +111,7 @@ Docker version 26.0.2, build 3c863ff
 #### Step 5. Verify Installation of docker :
 * You can verify Docker is running correctly by running a test container.
 ```bash
-$ sudo docker run hello-world
+ sudo docker run hello-world
 
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo docker run hello-world
 [sudo] password for nitishkumar: 
@@ -129,7 +129,7 @@ To generate this message, Docker took the following steps:
     to your terminal.
 
 To try something more ambitious, you can run an Ubuntu container with:
- $ docker run -it ubuntu bash
+  docker run -it ubuntu bash
 
 Share images, automate workflows, and more with a free Docker ID:
  https://hub.docker.com/
@@ -142,12 +142,12 @@ For more examples and ideas, visit:
 
 #### Step 6. Start the service of docker :
 ```bash
-$ sudo systemctl start docker
+sudo systemctl start docker
 ```
 
 #### step 7. Check the status of docker service :
 ```bash
-$ sudo systemctl status docker
+sudo systemctl status docker
 
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo systemctl status docker
 ● docker.service - Docker Application Container Engine
@@ -190,15 +190,15 @@ Jun 05 14:16:59 nitishkumar-IdeaPad-3-15ITL6 systemd[1]: Started Docker Applicat
 
 I. `docker build` command is used to create a Docker image from a Dockerfile and a context. 
 ```bash
-$ docker build -t image_name .
+ docker build -t image_name .
 ```
 I. The `docker pull` command is used by a client to download an image from a Docker registry (such as Docker Hub) to their local system.
 ```bash
-$ docker pull image_name
+ docker pull image_name
 ```
 II. `docker run` command is used to start a new container from a Docker image. 
 ```bash
-$ docker run container_name
+ docker run container_name
 ```
 
 **Docker Host :**
@@ -243,7 +243,7 @@ $ docker run container_name
 
 * By default, Docker provides two network drivers for you, the bridge and the overlay drivers.
 ```bash
-$ docker network ls
+ docker network ls
 ```
 
 ```bash
@@ -263,16 +263,16 @@ NETWORK ID     NAME      DRIVER    SCOPE
 
 1. Check docker version
 ```bash
-$ docker --version
+ docker --version
 ```
 ```bash
-$ nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ docker --version
+ nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ docker --version
 Docker version 26.0.2, build 3c863ff
 ```
 
 2. Lists docker images on the host machine.
 ```bash
-$ docker images
+ docker images
 ```
 ```bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ docker images
@@ -282,7 +282,7 @@ hello-world   latest    d2c94e258dcb   13 months ago   13.3kB
 
 3. To find out an images in docker hub
  ```bash
-$ docker search (Image name)
+ docker search (Image name)
 ```
 ```bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ docker search httpd
@@ -316,7 +316,7 @@ signiant/httpd                   httpd (apache2) base container with a custom…
 
 4. Check the container on the machine
 ```bash
-$ sudo docker ps
+ sudo docker ps
 ```
 ```bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo docker ps
@@ -327,7 +327,7 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
 5. Pull image from docker hub
 ```bash
-$ sudo docker pull (image name)
+ sudo docker pull (image name)
 ```
 ```bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo docker pull httpd
@@ -359,7 +359,7 @@ docker.io/library/httpd:latest
 
 7. Create the container
 ```bash
-$ sudo docker run -it --name (container name) (Image name)
+ sudo docker run -it --name (container name) (Image name)
 ```
 ```bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo docker run -it --name apache httpd
@@ -368,7 +368,7 @@ nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo docker run -it --name apache ht
 
 8. Start the container
 ```bash
-$ sudo docker start (container name)
+ sudo docker start (container name)
 ```
 ```bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo docker start apache
@@ -377,7 +377,7 @@ apache
 
 9. Stop the container
 ```bash
-$ sudo docker stop (container name)
+ sudo docker stop (container name)
 ```
 ```bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo docker stop apache
@@ -386,7 +386,7 @@ apache
 
 10. How to enter in the container
 ```bash
-$ sudo docker exec -it (container name) bash
+ sudo docker exec -it (container name) bash
 ```
 ```bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$  sudo docker exec -it apache bash 
@@ -396,15 +396,15 @@ bin  build  cgi-bin  conf  error  htdocs  icons  include  logs	modules
 
 11. Remove the container
 ```bash
-$ sudo docker stop (container name)
+ sudo docker stop (container name)
 ```
 ```bash
-$ sudo docker rm (container name)
+ sudo docker rm (container name)
 ```
 
 12. Removes an image from the host machine.
 ```bash
-$ sudo docker rmi (image Id)
+ sudo docker rmi (image Id)
 ```
 
 ## Conclusion
