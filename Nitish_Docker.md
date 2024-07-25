@@ -77,7 +77,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 #### Step 1. Check if the system up-to-date using following command :
 ```bash
-$ sudo apt-get update
+sudo apt update
 ```
 #### Step 2. Set up Docker's `apt` repository.
 ```bash
