@@ -67,7 +67,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
  ### Developer Productivity:
 
-* With the help of `docker`, Developer can build, test, and deploy applications more quicly and reliablly, thanks to the ability to create lightweight, reproducible development enviroments.
+* With `Docker` developers can build, test, and deploy applications more quickly and reliably, thanks to the ability to create lightweight, reproducible development environments.
 
 ## Installation of Docker
 **Prerequisite for Installation**
@@ -417,7 +417,7 @@ $ sudo docker rmi (image Id)
 * https://docs.docker.com/get-docker/
 * https://www.geeksforgeeks.org/docker-tutorial/
 
-## Thank You!
+
 
 
 
