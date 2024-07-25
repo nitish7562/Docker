@@ -1,5 +1,5 @@
  # Docker Documentation :
-In this documentation we covers basics of `Docker` like setup, images, containers, networking, volumes, and some basic `Docker` commands and practices. 
+In this documentation we covers basics of `Docker` like setup, images, containers, networking, and some basic `Docker` commands and practices. 
 
 ![image](https://www.docker.com/wp-content/uploads/2022/12/Docker-Temporary-Image-Social-Thumbnail-1200x630-1.png)
 
@@ -55,7 +55,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 ### Efficiency:
 
-* `Docker` uses resourcess more eficiently than traditional virtual machines, as containers share the host system's kernel and do not require a full operating system.
+* `Docker` uses resourcess more eficiently than traditional virtual machines.
 
 ### Scalability:
 
@@ -178,12 +178,12 @@ Jun 05 14:16:59 nitishkumar-IdeaPad-3-15ITL6 systemd[1]: Started Docker Applicat
 
 ## Docker Architecture
 
-* Docker uses Client-Server architecture, which involves the 3 main components that are Docker Client, Docker Host, and Docker Registry. The Docker client communicates with the Docker daemon, which takes care of the building, running, and distributing the Docker containers. The Docker client and daemon can run on the same system or connect a client to a remote Docker daemon. They communicate using REST APIs, over UNIX sockets or a network interface.
+* Docker uses Client-Server architecture, which involves the 3 main components that are Docker Client, Docker Host, and Docker Registry. The Docker client communicates with the Docker daemon, which takes care of the building, running, and distributing the Docker containers. The Docker client and daemon can run on the same system or connect a client to a remote Docker daemon.
 
 ![image](https://k21academy.com/wp-content/uploads/2021/04/image-16-1.png)
 
 **Docker Client :**
-* With the help of the docker client, the docker users can interact with the docker. The docker command uses the Docker API. The Docker client can communicate with multiple daemons. When a docker client runs any docker command on the docker terminal then the terminal sends instructions to the daemon.
+* With the help of the docker client, the docker users can interact with the docker. The docker command uses the Docker API. The Docker client can communicate with multiple daemons.
 * The main objective of the docker client is to provide a way to direct the pull of images from the docker registry and run them on the docker host.
   
 **Commands used by Client :**
@@ -218,7 +218,7 @@ II. `docker run` command is used to start a new container from a Docker image.
 
 ## What is container
 * A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
-* A Docker container is a lightweight, standalone, executable package that includes everything needed to run a piece of software: code, runtime, system tools, libraries, and settings. It is built from a Docker image and can run consistently on any system that has Docker installed.
+  
 ![image](https://www.docker.com/wp-content/uploads/2021/11/docker-containerized-appliction-blue-border_2.png)
   
 ## Docker Files
@@ -256,7 +256,6 @@ NETWORK ID     NAME      DRIVER    SCOPE
 
 ## Docker Storage
 * Docker storage refers to how data is stored and managed in Docker containers. It includes various mechanisms to persist data generated and used by containers.
-* Containers don’t write data permanently to any storage location. Docker storage must be configured if you would like your container to store data permanently. The data doesn’t prevail when the container is deleted (using the remove command); this happens because when the container is deleted, the writable layer is also deleted. If the data is stored outside the container you can use it even if the container no longer exists.
 
 ## Docker commands
 **Some of the most commonly used docker commands are**
@@ -359,7 +358,7 @@ docker.io/library/httpd:latest
 
 7. Create the container
 ```bash
- sudo docker run -it --name (container name) (Image name)
+ sudo docker run -it --name (container name) (Image name) /bin/bash
 ```
 ```bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo docker run -it --name apache httpd
@@ -386,7 +385,7 @@ apache
 
 10. How to enter in the container
 ```bash
- sudo docker exec -it (container name) bash
+ sudo docker attach (container name)
 ```
 ```bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$  sudo docker exec -it apache bash 
@@ -410,8 +409,6 @@ bin  build  cgi-bin  conf  error  htdocs  icons  include  logs	modules
 ## Conclusion
 
 * `Docker` is a powerful tool that has revolutionized the way we develop, deploy, and manage applications. By allowing developers to package applications and their dependencies into containers, `Docker` ensures that software runs consistently across different environments, from development to production. This eliminates many of the issues related to environment differences, making the development process more efficient and reliable.
-
-* `Docker` simplifies the complexities of application deployment and management, making it an invaluable tool for modern software development. Its ability to create consistent environments, combined with the flexibility and efficiency of containers, makes Docker a cornerstone of DevOps practices and cloud-native development.
 
 ## Reference Link
 * https://docs.docker.com/get-docker/
