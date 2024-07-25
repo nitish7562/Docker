@@ -31,10 +31,6 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 * Run each app in its own space, like having separate rooms for different tasks. This keeps things organized and avoids conflicts.
 
-### Move Anywhere:
-
-* Imagine our apps in portable boxes. Docker lets move our apps easily between different computers or cloud services, like packing boxes for a move.
-
 ### Runs Fast & Lean:
 
 * Containers are lightweight, like carrying a backpack instead of a suitcase. They start up quicker and use fewer resources.
@@ -106,7 +102,7 @@ $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugi
 
 #### Step 5. check the version of Docker :
 ```bash
-$ docker version
+$ docker --version
 
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ docker --version
 Docker version 26.0.2, build 3c863ff
@@ -317,6 +313,7 @@ futdryt/httpd                                                                   
 amd64/httpd                      The Apache HTTP Server Project                  1         
 signiant/httpd                   httpd (apache2) base container with a custom…   0  
 ```
+
 4. Check the container on the machine
 ```bash
 $ sudo docker ps
@@ -359,6 +356,7 @@ Digest: sha256:43c7661a3243c04b0955c81ac994ea13a1d8a1e53c15023a7b3cd5e8bb25de3c
 Status: Image is up to date for httpd:latest
 docker.io/library/httpd:latest
 ```
+
 7. Create the container
 ```bash
 $ sudo docker run -it --name (container name) (Image name)
@@ -375,7 +373,6 @@ $ sudo docker start (container name)
 ```bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo docker start apache
 apache
-nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$
 ```
 
 9. Stop the container
@@ -385,7 +382,6 @@ $ sudo docker stop (container name)
 ```bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ sudo docker stop apache
 apache
-nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ 
 ```
 
 10. How to enter in the container
@@ -396,7 +392,6 @@ $ sudo docker exec -it (container name) bash
 nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$  sudo docker exec -it apache bash 
 root@02dca9c9d6db:/usr/local/apache2# ls
 bin  build  cgi-bin  conf  error  htdocs  icons  include  logs	modules
-root@02dca9c9d6db:/usr/local/apache2# 
 ```
 
 11. Remove the container
