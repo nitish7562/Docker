@@ -13,7 +13,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 5. [Installation of Docker](#installation-of-docker)
 6. [What is container](#what-is-container)
 7. [Docker Files](#docker-files)
-9. [Docker Network and Types](#docker-network-and-types)
+9. [Docker Network ](#docker-network)
 10. [Docker Storage](#docker-storage)
 11. [Docker commands](#docker-commands)
 12. [Conclusion](#conclusion)
