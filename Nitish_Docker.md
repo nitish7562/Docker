@@ -320,7 +320,7 @@ Status: Downloaded newer image for httpd:latest
 docker.io/library/httpd:latest
 ```
 
-6. push/downloads image from docker hub
+6. push image to a docker registry
 ```bash
 sudo docker push (image name)
 ```
