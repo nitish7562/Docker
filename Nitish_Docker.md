@@ -37,7 +37,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 
 ### Always the Same:
 
-* Build our app recipe once with Docker. No matter where i run it, I get the same results, avoiding setup headaches.
+* Build our app recipe once with Docker. No matter where i run it, I get the same results.
 
 ### Share and Colaborate:
 
