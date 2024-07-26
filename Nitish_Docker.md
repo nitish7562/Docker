@@ -227,32 +227,9 @@ II. `docker run` command is used to start a new container from a Docker image.
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20230406105935/dockerfile-2.png)
 
 
-## Docker Network and Types 
+## Docker Network
 
 * The Docker network is a virtual network created by Docker to enable communication between Docker containers. If two containers are running on the same host they can communicate with each other without the need for ports to be exposed to the host machine
-
-
-**Types :**
-1. `bridge:` If you build a container without specifying the kind of driver, the container will only be created in the bridge network, which is the default network.
-
-2. `host:` Containers will not have any IP address they will be directly created in the system network which will remove isolation between the docker host and containers.
-
-3. `none:` IP addresses won’t be assigned to containers. These containments are not accessible to us from the outside or from any other container.
-
-4. `overlay:` overlay network will enable the connection between multiple Docker demons and make different Docker swarm services communicate with each other.
-
-* By default, Docker provides two network drivers for you, the bridge and the overlay drivers.
-```bash
- docker network ls
-```
-
-```bash
-nitishkumar@nitishkumar-IdeaPad-3-15ITL6:~$ docker network ls
-NETWORK ID     NAME      DRIVER    SCOPE
-332f09da8fef   bridge    bridge    local
-134d7dca47e4   host      host      local
-3ccbbad91e95   none      null      local
-```
 
 ## Docker Storage
 * Docker storage refers to how data is stored and managed in Docker containers. It includes various mechanisms to persist data generated and used by containers.
