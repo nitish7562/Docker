@@ -188,17 +188,17 @@ Jun 05 14:16:59 nitishkumar-IdeaPad-3-15ITL6 systemd[1]: Started Docker Applicat
   
 **Commands used by Client :**
 
-I. `docker build` command is used to create a Docker image from a Dockerfile and a context. 
+I. `docker run` command is used to start a new container from a Docker image. 
 ```bash
- docker build -t image_name .
+ docker run container_name
 ```
 I. The `docker pull` command is used by a client to download an image from a Docker registry (such as Docker Hub) to their local system.
 ```bash
  docker pull image_name
 ```
-II. `docker run` command is used to start a new container from a Docker image. 
+II. `docker ps` command is used to list running containers. 
 ```bash
- docker run container_name
+ docker ps
 ```
 
 **Docker Host :**
