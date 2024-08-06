@@ -253,6 +253,24 @@ II. `docker ps` command is used to list running containers.
 
 * The Docker network is a virtual network created by Docker to enable communication between Docker containers. If two containers are running on the same host they can communicate with each other without the need for ports to be exposed to the host machine
 
+### Types of Docker Network:
+1. Bridge Network
+2. Host Network
+3. Overlay Network
+4. None Network
+
+**List Docker Networks**
+```bash
+docker network ls
+```
+```bash
+nitishkumar@Ubuntu:~$ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+22611e05df32   bridge    bridge    local
+134d7dca47e4   host      host      local
+3ccbbad91e95   none      null      local
+```
+
 ## Docker Storage
 * Docker storage refers to how data is stored and managed in Docker containers. It includes various mechanisms to persist data generated and used by containers.
 
