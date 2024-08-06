@@ -13,6 +13,7 @@ In this documentation we covers basics of `Docker` like setup, images, container
 5. [Installation of Docker](#installation-of-docker)
 6. [What is container](#what-is-container)
 7. [Docker Files](#docker-files)
+8. [Components of Docker files](#components-of-docker-files)
 9. [Docker Network ](#docker-network)
 10. [Docker Storage](#docker-storage)
 11. [Docker commands](#docker-commands)
@@ -226,6 +227,27 @@ II. `docker ps` command is used to list running containers.
 
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20230406105935/dockerfile-2.png)
 
+## Components of Docker files 
+
+*FROM* : Specifies the base image to use for the Docker image. Every Dockerfile must start with a FROM instruction.
+
+*RUN* : It contains commands to be executed while creating image. It will create layers in image.
+
+*COPY* : It is used to Copies files or directories from the host system into the Docker image.
+
+*ADD* : It is similar to COPY command but also supports URL sources and extracting tar archives.
+
+*WORKDIR* : It is used to set a working directory for container.
+
+*CMD* : It Provides the default command to run when the container starts. Only one CMD instruction can be used.
+
+*ENTRPOINT* : Configures a container that will run as an executable. It is similar to CMD but allows you to pass additional arguments to the executable.
+
+*ENV* : It is used to Sets environment variables in the container.
+
+*expose* : It is used to export ports such as 8080 for tomcat, 80 for nginx etc.
+
+*ARG* : Defines variables. It is used to define build-time variable.
 
 ## Docker Network
 
